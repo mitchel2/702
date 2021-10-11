@@ -1,4 +1,4 @@
-//require('dotenv').config();
+require('dotenv').config();
 
 // IMPORTACIONES
 const express = require('express');
@@ -8,8 +8,8 @@ const bodyParser = require('body-parser');
 const errorhandler = require ('errorhandler');
 
 //const url = 'mongodb://localhost:27017'
-const ur1 = 'mongodb+srv://mitchelle:12345@702.7p24f.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
-//const ur1 = process.env.MONGODB_URL
+//const ur1 = 'mongodb+srv://mitchelle:12345@702.7p24f.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+const url = process.env.MONGODB_URL
 let app  =  express();
 // MIDDELWARES
 app.use(bodyParser.json());
